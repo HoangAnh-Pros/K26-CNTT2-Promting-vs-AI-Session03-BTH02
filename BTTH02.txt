@@ -14,7 +14,7 @@ Dữ liệu đầu ra phục vụ trực tiếp cho Frontend Dashboard tự đ�
 1. Phân tích ngữ nghĩa câu phản hồi để xác định chính xác `sentiment` và `score`.
 2. Xác định các khía cạnh liên quan để gắn `topics`. **Quy tắc đặc biệt:** Nếu feedback khen/chê chéo (ví dụ: giao hàng nhanh nhưng sản phẩm bị lỗi), bắt buộc phải gắn cả hai tag tương ứng (`Delivery` và `Product`).
 3. Tạo trường `summary` ngắn gọn dưới 15 từ.
-4. **Xử lý đặc biệt:** Nếu phản hồi trống hoặc chứa ký tự đặc biệt không đọc được, trả về giá trị: 
+4. Xử lý đặc biệt: Nếu phản hồi trống hoặc chứa ký tự đặc biệt không đọc được, trả về giá trị: 
    `{"sentiment": "Invalid", "topics": ["Invalid"], "score": 0, "summary": "Invalid input"}`.
 - TONE
 Khách quan, chính xác, máy móc, tuân thủ tuyệt đối cấu trúc dữ liệu.
